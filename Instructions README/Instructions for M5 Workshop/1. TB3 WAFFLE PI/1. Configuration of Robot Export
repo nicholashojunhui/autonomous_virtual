@@ -1,0 +1,13 @@
+Configuration of Robot Export in bash
+
+Since we are only dealing with TB3 waffle pi, lets configure all exports of the TB3 model to waffle_pi. This will help us save time in typing export TURTLEBOT3_MODEL=waffle_pi
+
+1. Type in Terminal:
+
+$ gedit ~/.bashrc
+
+2. Scroll all the way down and type “export TURTLEBOT3_MODEL=waffle_pi” at the last line.
+
+3. After which, save and exit. Type the command in the terminal:
+
+$ source ~/.bashrc
