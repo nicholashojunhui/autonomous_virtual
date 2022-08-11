@@ -1,0 +1,56 @@
+
+[Two Objectives]:
+
+1. Perform SLAM on all 3 maze worlds (i.e. maze 1, maze 2 and maze 3). Remember to save the map (.pgm)
+
+2. Perform NAVIGATION to reach endpoint (illustrated in the slides) for the 3 maze worlds in two different ways:
+
+a) Setting 2D Nav Goal at the endpoint straight away. Observe the TB3 movements
+
+b) Do it step by step by first planning an optimal route, and then guiding the TB3 to move point to point until the end point. Observe the TB3 movements and contrast them with the first way
+
+
+
+[RECAP for SLAM]:
+
+1. Run Gazebo with TB3 in the relevant world
+
+$ roslaunch turtlebot3_gazebo turtlebot3_mazeX.launch
+
+2. Run SLAM Node (gmapping or frontier)
+
+$ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+
+OR
+
+$ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=frontier_exploration
+
+3. Activate teleop node (if you use gmapping) 
+
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+OR publish points (if you use frontier exploration)
+
+4. Save map after done:
+
+$ rosrun map_server map_saver -f ~/mazeX
+
+
+
+[RECAP for NAVIGATION]:
+
+1. Run Gazebo with TB3 in the relevant world
+
+$ roslaunch turtlebot3_gazebo turtlebot3_mazeX.launch
+
+2. Execute Navigation node
+
+$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/mazeX.yaml
+
+3. Execute 2D Pose Estimate & 2D Nav Goal(s)
+
+
+
+
+
+

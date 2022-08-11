@@ -1,0 +1,22 @@
+
+Setup before you start on P3:
+
+1. Download and extract file, “P3” into your Ubuntu
+
+2. Copy all files under “models” in unzipped file (i.e. floor_parquest2, maze_1_6x5, etc)
+
+3. Navigate to Home >> .gazebo (type clt-H to review hidden files) >> models
+
+4. Paste all copied model files in this folder
+
+5. Next, under “launch” in unzipped file, copy all files inside (i.e. turtlebot3_maze1.launch, etc)
+
+6. And navigate to src >> turtlebot3_simulations >> turtlebot3_gazebo >> launch
+
+7. Paste all copied launch files in this folder
+
+8. Next, under “world” in unzipped file, copy all files inside (i.e. maze_1_6x5.world, etc)
+
+9. And navigate to src >> turtlebot3_simulations >> turtlebot3_gazebo >> worlds
+
+10. Paste all copied world files in this folder
