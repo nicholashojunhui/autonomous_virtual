@@ -1,18 +1,16 @@
 
 Setup before you start on P4b:
 
-1. Download and extract file, “P4b” into your Ubuntu
+1. Copy “darkworld.launch” file under the "launch" folder under "P4b" folder
 
-2. Next, copy “darkworld.launch” file under the launch folder
+2. Navigate to src >> turtlebot3_simulations >> turtlebot3_gazebo >> launch
 
-3. Navigate to src >> turtlebot3_simulations >> turtlebot3_gazebo >> launch
+3. Paste copied launch file in this folder
 
-4. Paste copied launch file in this folder
+4. Next, copy “darkworld.world” file under the "world" folder under "P4b" folder
 
-5. Next, copy “darkworld.world” file under the world folder
+5. And navigate to src >> turtlebot3_simulations >> turtlebot3_gazebo >> worlds
 
-6. And navigate to src >> turtlebot3_simulations >> turtlebot3_gazebo >> worlds
-
-7. Paste copied world file in this folder
+6. Paste copied world file in this folder
 
 
