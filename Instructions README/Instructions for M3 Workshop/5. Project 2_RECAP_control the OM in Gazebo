@@ -1,27 +1,44 @@
 
-Note for Project 2:
 
-- For Manual Control, use the current OpenCR configuration. Use the RC100 controller as explained in the slides
+################# Setup (if you have not done before) #################
+1. Navigate to /home/nicho/catkin_ws/src/open_manipulator_simulations/open_manipulator_gazebo/launch
 
-- For Hand Guiding, use the current OpenCR configuration. Refer to the explanations in the slides and/or README instructions
+2. Copy and paste Project.launch file here
 
-- For FK/IK Techniques, use the ROS configuration; remember to reconfigure and upload the correct firmware using Arduino. You can use the given Project2.py as a reference template for this part
+3. Navigate to /home/nicho/catkin_ws/src/open_manipulator_simulations/open_manipulator_gazebo/worlds
 
-################# RECAP on procedures to rosrun #################
+4. Copy and paste Project.world file here
 
-1. Run roscore on one terminal
-$ roscore
 
-2. Prepare the setup for the OM: Connect the wires, switch on the power, and manually bring up the OM
+################# Execution Guide #################
+1. Launch the world in Gazebo
 
-3. On another terminal, activate the controller; this will lock the motors
-$ roslaunch open_manipulator_controller open_manipulator_controller.launch
+$ roslaunch open_manipulator_gazebo Project.launch
 
-4. On another terminal, ROSRUN/ROSLAUNCH your codes
+2. Press play and on another terminal, activate the controller
+
+$ roslaunch open_manipulator_controller open_manipulator_controller.launch use_platform:=false
+
+3. On another terminal, ROSRUN/ROSLAUNCH your codes
+
 $ rosrun autonomous Project2.py 
-
 (for FK/IK)
 *ensure that your codes are in the src folder of your autonomous package
 *ensure you have given permissions to your python files (1. cd to directory; 2. chmod +x your_codes.py)
 
+OR
+
+$ roslaunch open_manipulator_save_and_load save_and_load.launch 
+(for Hand Guiding)
+*you can use the same package as developed previously
+*refer to README file for Hand Guiding method
+
+
+Note for Project 2:
+- For manual control, use teleop node,
+$ roslaunch open_manipulator_teleop open_manipulator_teleop_keyboard.launch
+
+- For FK/IK techniques, refer to control_om.py, setkinematicspose.py or setkinematicspose_withorientation.py
+
+- For Hand Guiding, refer to save_and_load.launch and save_and_load.py files
 
