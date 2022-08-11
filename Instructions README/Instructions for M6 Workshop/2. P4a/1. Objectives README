@@ -1,0 +1,14 @@
+
+For this sub-project, you are required to write 1 Python files and 1 launch file with the
+following details:
+
+1. Project4a.launch
+2. P4_path_planning.py
+
+*Use turtlebot3_world map for Project 4a
+
+Objective:
+
+(A) The launch file when executed will open the RViz, then run the initial pose node (i.e. initial_pose.py), which enables the TB3 to first initiate the pose estimate for you
+
+(B) And lastly, run the path planning node (i.e. P4_path_planning.py), which enables the TB3 to follow the desired path; the desired path is illustrated in the slides

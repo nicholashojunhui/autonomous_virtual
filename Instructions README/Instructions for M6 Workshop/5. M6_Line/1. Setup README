@@ -1,0 +1,25 @@
+
+[Setup]:
+
+1. Download and extract zip file, “M6_Line” into your Ubuntu
+
+2. Copy all files under “models” in unzipped file (i.e. rooms, yellow line)
+
+3. Navigate to Home >> .gazebo (type clt-H to review hidden files) >> models
+
+4. Paste all copied model files in this folder
+
+5. Download and extract zip file, “M6 Workshop” into your Ubuntu
+
+6. Next, copy “line.launch”, “follow_line.py” and “move_robot_turtlebot3.py” files
+
+7. And navigate to src >> autonomous
+
+8. Paste copied launch file in the launch folder and python files in the src folder
+
+9. Next, copy “line.world” file
+
+10. And navigate to src >> turtlebot3_simulations >> turtlebot3_gazebo >> worlds
+
+11. Paste copied world file in this folder
+

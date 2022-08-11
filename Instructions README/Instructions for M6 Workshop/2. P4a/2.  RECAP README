@@ -1,0 +1,22 @@
+
+[RECAP]:
+
+You have to launch your Gazebo first (to load TB3 in the TB3 World) first before you launch the launch file, Project4a.launch
+
+[Example]:
+
+1. Launch Gazebo (to load TB3 in the TB3 World):
+
+$ roslaunch turtlebot3_gazebo turtlebot3_world.launch
+
+2. Execute launch file to execute required tasks:
+
+$ roslaunch autonomous Project4a.launch map_file:=$HOME/TB3_WORLD.yaml
+
+*** Meaning you are only required to type 2 command lines on 2 separate terminals to perform the given tasks
+
+*ensure that your python codes are in the src folder of your autonomous package
+*ensure that your launch files are in the launch folder of your autonomous package
+*ensure you have given permissions to your python files (1. cd to directory; 2. chmod +x P4_path_planning.py)
+
+

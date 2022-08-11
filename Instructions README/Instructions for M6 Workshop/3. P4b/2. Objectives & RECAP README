@@ -1,0 +1,62 @@
+
+[Three Objectives]:
+
+1. Firstly, activate the teleop node controller and use the keys to remotely navigate the TB3 through the maze from the starting point to the desired destination AND orientation. You only can use the camera of the TB3 (in rqt image view) as your visual guide. Time yourself and reflect on the pros/cons of this method
+
+2. Secondly, using the SLAM & NAVIGATION methods that we practiced previously, configure an autonomous vehicle that will automatically navigate itself within the maze from the starting point to the desired destination AND orientation. Use roslaunch and rospy to aid you in the navigation node (i.e. take reference from Project 4a). Time yourself and reflect on the pros/cons of this method
+
+3. Make a comparison between these 2 methods (with the help of the given comparison table)
+
+
+
+[Map to be used for P4b]:
+
+darkworld which has the same structure as Maze_2, except this world is DARK.
+
+*Hence, you DO NOT need to perform SLAM again for this project; just use maze2.pgm which you have created previously in P3
+
+
+
+[RECAP for Manual Driving]:
+
+1. Run Gazebo with TB3 in the relevant world
+
+$ roslaunch turtlebot3_gazebo darkworld.launch
+
+2. To open up Image View, in new terminal, type
+
+$ rqt
+
+3. Once rqt open, navigate to Plugins >> Visualization >> Image View
+
+4. Select /camera/rgb/image_raw
+
+5. To activate teleop node, in new terminal, type command:
+
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+
+
+[RECAP for Autonomous Driving]:
+
+You have to launch your Gazebo first (to load TB3 in the darkworld) first before you launch the launch file, Project4b.launch; Example:
+
+1. Run Gazebo with TB3 in the relevant world
+
+$ roslaunch turtlebot3_gazebo darkworld.launch
+
+2. Execute launch file to execute required tasks
+
+$ roslaunch autonomous Project4b.launch map_file:=$HOME/maze2.yaml
+
+*** Meaning you are only required to type 2 command lines on 2 separate terminals to perform the given tasks
+
+*ensure that your python codes are in the src folder of your autonomous package
+*ensure that your launch files are in the launch folder of your autonomous package
+*ensure you have given permissions to your python files (1. cd to directory; 2. chmod +x your_python_codes.py)
+
+
+
+
+
+
